@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2? family= Poppins:wght@100;300;400;500;600 & display=swap');
+
+:root {
+    --main-color: 	#FFD700;
+    --black-color: #0e0e0e;
+    --border:0.1rem solid rgba(255,255,255,0.4);
+}
+
+
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+   
+    transition: 0.2s ease;
+}
+
+/*! base html codes */
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    width: 0.8rem;
+    background-color: white;
+}
+
+html::-webkit-scrollbar-track{
+    background-color: #FFD700;
+}
+
+
+html::-webkit-scrollbar-thumb {
+    border-radius: 3rem;
+    background-color: var(--black-color);
+}
+
+
+
+body{
+    background-color: var(--main-color);
+   
+}
+section{
+    padding: 3.5rem 7%;
+}
+
+a{
+    color: var(--black-color);
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 2rem 3.75rem;
+    border-radius: 30rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background-color: var(--black-color);
+    cursor: pointer;
+}
+
+.heading{
+    color: black;
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin-bottom: 3.5rem;
+    border-bottom: 0.1rem solid #fff;
+}
+
+.search-input {
+    font-size: 1.6rem;
+    color: var(--black-color);
+    padding: 1rem;
+    text-transform: none;
+    border-radius: 3rem;
+}
+
+
+/*! header sytart */
+.header .logo img {
+    height: 10rem;
+}
+
+.header {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 7%;
+    margin: 2rem 7%;
+    border-radius: 30rem;
+    box-shadow: 0px 0px 17px -2px rgba(0,0,0,0.75);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.header .navbar a{
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: var(--black-color);
+    border-bottom: 0.1rem solid transparent;
+}
+.header .navbar .active,
+.header .navbar a:hover{
+    border-color: var(--main-color);
+    padding-bottom: 0.5rem;
+}
+.header .buttons button{
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    background-color: transparent;
+}
+/*! header end */
+
+/*! Anasayfa star */
+.Anasayfa {
+    min-height: 100vh;
+    background: url(../images/Anasayfa.jpg)
+    no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -14.3rem;
+    display: flex;
+    align-items: center;
+    
+}
+.Anasayfa .content {
+    margin-top: 45rem;
+    max-width: 60rem;
+}
+.Anasayfa .content h3{
+    font-size: 5rem;
+    color: floralwhite;
+
+}
+
+.Anasayfa .content p{
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.2;
+    padding: 1rem 0;
+    color: aliceblue;
+}
+
+
+
+/*! Anasayfa end */
+
+/*! Projeler start */
+.Projeler .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+
+}
+.Projeler .box-container .box{
+    padding: 3rem;
+    background-color: #fff;
+    border-radius: 3rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    object-fit: cover;
+
+}
+
+
+.Projeler .box-container .box img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.Projeler .box-container .box h3{
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+
+/*! Projeler end */
+/*! devam_eden_projeler start */
+.devam_eden_projeler .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+
+}
+.devam_eden_projeler .box-container .box{
+    padding: 3rem;
+    background-color: #fff;
+    border-radius: 3rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    object-fit: cover;
+
+}
+
+
+.devam_eden_projeler .box-container .box img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.devam_eden_projeler .box-container .box h3{
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+
+/*! devam_eden_projeler end */
+
+/*! Marangoz star */
+.Marangoz .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+
+}
+
+
+
+.Marangoz .box-container .box{
+    text-align: center;
+    background-color: #fff;
+    position: relative;
+    border-radius: 3rem;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 3rem;
+
+}
+
+.Marangoz .box-container img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    
+}
+
+/*! Marangoz end */
+
+/*! PVC star */
+.PVC .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+
+}
+
+
+
+.PVC .box-container .box{
+    text-align: center;
+    background-color: #fff;
+    position: relative;
+    border-radius: 3rem;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 3rem;
+
+}
+
+.PVC .box-container img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    
+}
+
+/*! PVC end */
+
+/*! Hakkımızda start */
+.about .row .content{
+    flex: 1 1 45rem;
+}
+
+.about .row .content h3{
+    font-size: 3rem;
+    color: #fff;
+}
+
+.about .row .content p{
+    font-size: 1.8rem;
+    color: black;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+/*! Hakkımızda end */
+/*! Hizmetlerimiz start */
+.Hizmetlerimiz .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+
+}
+
+.Hizmetlerimiz .box-container .box {
+    border: var(--border);
+    text-align: center;
+    padding: 3rem 2rem;
+    background-color: #fff;
+    border-radius: 3rem;
+}
+
+.Hizmetlerimiz .box-container .box img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.Hizmetlerimiz .box-container .box h3{
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+
+.Hizmetlerimiz .box-container .box p{
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.Hizmetlerimiz .box-container .box p{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    padding: 2rem 0;
+ }
+
+
+/*! Hizmetlerimiz end */
+
+/*! Bizeulaşın start */
+.Bizeulaşın .row {
+    display: flex;
+    background-color: var(--black-color);
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.Bizeulaşın .row .map{
+    flex: 1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.Bizeulaşın .row form {
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.Bizeulaşın .row form h3{
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+.Bizeulaşın .row form .inputBox{
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+    border: var(--border);
+
+}
+
+.Bizeulaşın .row form .inputBox i {
+    color: #fff;
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+.Bizeulaşın .row form .inputBox input {
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    color:#fff;
+    text-transform: none;
+    background-color: transparent;
+}
+
+.Bizeulaşın .row form .btn{
+    color: var(--black-color);
+    background-color: #fff;
+    font-weight: bold;
+}
+/*! Bizeulaşın end */
+
+/*! footer start */
+.footer {
+    background-color: var(--black-color);
+    text-align: center;
+}
+
+.footer .search{
+    display: flex;
+    justify-content: center;
+}
+
+.footer .search .search-input {
+    width: 30rem;
+}
+
+.footer .search .btn {
+    background-color: var(--main-color);
+    padding: 1rem 2rem;
+    margin-left: 1rem;
+}
+/*! footer end */
